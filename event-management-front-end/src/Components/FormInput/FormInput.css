@@ -1,0 +1,82 @@
+.formInput-Container {
+  margin-top: 2rem;
+}
+
+.formInput-Container label {
+  color: var(--dark-color);
+  text-align: start;
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.formInput-Container input {
+  width: 19rem;
+  height: 2.6rem;
+  word-wrap: break-word;
+  flex-shrink: 0;
+  text-align: start;
+  border-radius: 0.625rem;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  background: var(--light-color);
+  -webkit-border-radius: 0.625rem;
+  -moz-border-radius: 0.625rem;
+  -ms-border-radius: 0.625rem;
+  -o-border-radius: 0.625rem;
+}
+
+.sign-in-container .password-eye {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  float: right;
+  margin-left: -25px;
+  margin-top: -48px;
+  height: 3rem;
+  width: 2.8rem;
+  position: relative;
+  z-index: 99;
+  background-color: var(--primary-color);
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  font-size: 1.2rem;
+  color: var(--light-color);
+}
+
+.sign-up-container .password-eye {
+  background-color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  width: 2.8rem;
+  float: right;
+  margin-left: -25px;
+  margin-top: -48px;
+  height: 3rem;
+  position: relative;
+  z-index: 99;
+  font-size: 1.2rem;
+  color: var(--light-color);
+}
+
+.password-eye .password-eye-icon {
+  transition: var(--transition-primary);
+  -webkit-transition: var(--transition-primary);
+  -moz-transition: var(--transition-primary);
+  -ms-transition: var(--transition-primary);
+  -o-transition: var(--transition-primary);
+}
+.password-eye:hover .password-eye-icon {
+  transition: var(--transition-primary);
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  -webkit-transition: var(--transition-primary);
+  -moz-transition: var(--transition-primary);
+  -ms-transition: var(--transition-primary);
+  -o-transition: var(--transition-primary);
+}

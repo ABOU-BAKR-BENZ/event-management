@@ -1,0 +1,44 @@
+.Error404 div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Error404 div img {
+  max-width: 36rem;
+  width: 100vw;
+  margin-top: 3rem;
+}
+
+.Error404 .Go-Back {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+.Go-Back {
+  text-decoration: none;
+}
+
+.Error404 .Go-Back h1 {
+  border: var(--border-radius-primary) solid var(--dark-color);
+  border-radius: 5rem;
+  background-color: var(--primary-color);
+  color: var(--light-color);
+  padding: 0.8rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  transition: var(--transition-primary);
+  -webkit-border-radius: 5rem;
+  -moz-border-radius: 5rem;
+  -ms-border-radius: 5rem;
+  -o-border-radius: 5rem;
+  -webkit-transition: var(--transition-primary);
+  -moz-transition: var(--transition-primary);
+  -ms-transition: var(--transition-primary);
+  -o-transition: var(--transition-primary);
+}
+.Error404 .Go-Back h1:hover {
+  background-color: var(--light-color);
+  color: var(--primary-color);
+}

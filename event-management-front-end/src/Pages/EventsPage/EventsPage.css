@@ -1,0 +1,29 @@
+.events-title {
+    font-size: 3rem;
+    font-weight: 900;
+    color: #333;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 10px 0;
+    border-bottom: 3px solid #007bff;
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+.events-cards-container {
+    perspective: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 3rem 4rem;
+    gap: 6rem 3rem;
+}
+
+.events-cards-container > .event-card {
+    flex: 1 1 calc(25% - 3rem);
+    max-width: calc(25% - 3rem);
+    box-sizing: border-box;
+}

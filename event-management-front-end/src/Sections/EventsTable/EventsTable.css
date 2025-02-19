@@ -1,0 +1,6 @@
+.events-table-container td,
+th {
+    font-weight: 500;
+    vertical-align: middle;
+    text-align: center;
+}

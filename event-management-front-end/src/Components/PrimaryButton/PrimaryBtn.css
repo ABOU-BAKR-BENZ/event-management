@@ -1,0 +1,35 @@
+.PrimaryBtn {
+  border-radius: 6.25rem;
+  border: 0.1rem solid var(--primary-color);
+  background: var(--primary-color);
+  padding: 0.6rem 1rem;
+  color: var(--light-color);
+  text-align: center;
+  text-wrap: nowrap;
+  font-size: 1.5625rem;
+  font-weight: 600;
+  line-height: normal;
+  cursor: pointer;
+  transition: var(--transition-primary);
+  -webkit-transition: var(--transition-primary);
+  -moz-transition: var(--transition-primary);
+  -ms-transition: var(--transition-primary);
+  -o-transition: var(--transition-primary);
+  -webkit-border-radius: 6.25rem;
+  -moz-border-radius: 6.25rem;
+  -ms-border-radius: 6.25rem;
+  -o-border-radius: 6.25rem;
+}
+
+.PrimaryBtn:hover {
+  background-color: var(--light-color);
+  color: var(--primary-color);
+  border: 0.1rem solid var(--dark-color);
+}
+
+@media screen and (max-width: 767px) {
+  .PrimaryBtn {
+    font-size: 1rem;
+    width: 9rem;
+  }
+}

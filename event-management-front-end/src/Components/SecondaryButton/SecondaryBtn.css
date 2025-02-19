@@ -1,0 +1,36 @@
+.SecondaryBtn {
+  width: 11.5625rem;
+  flex-shrink: 0;
+  border-radius: 6.25rem;
+  border: 1.6px solid #000;
+  background: var(--light-color);
+  padding: 0.6rem 0;
+  color: var(--dark-color);
+  text-align: center;
+  font-size: 1.5625rem;
+  font-weight: 600;
+  line-height: normal;
+  transition: var(--transition-primary);
+  cursor: pointer;
+  -webkit-border-radius: 6.25rem;
+  -moz-border-radius: 6.25rem;
+  -ms-border-radius: 6.25rem;
+  -o-border-radius: 6.25rem;
+  -webkit-transition: var(--transition-primary);
+  -moz-transition: var(--transition-primary);
+  -ms-transition: var(--transition-primary);
+  -o-transition: var(--transition-primary);
+}
+
+.SecondaryBtn:hover {
+  background-color: var(--primary-color);
+  color: var(--light-color);
+  border: 0.1rem solid var(--dark-color);
+}
+
+@media screen and (max-width: 767px) {
+  .SecondaryBtn {
+    width: 9rem;
+    font-size: 1rem;
+  }
+}

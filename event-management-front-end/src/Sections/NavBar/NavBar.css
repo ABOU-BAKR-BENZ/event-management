@@ -1,0 +1,112 @@
+.navbar {
+    display: block;
+    height: 4.3rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    transition: var(--transition-secondary);
+    width: 100vw;
+    -webkit-transition: var(--transition-secondary);
+    -moz-transition: var(--transition-secondary);
+    -ms-transition: var(--transition-secondary);
+    -o-transition: var(--transition-secondary);
+}
+
+.bg-light {
+    transition: var(--transition-secondary);
+    -webkit-transition: var(--transition-secondary);
+    -moz-transition: var(--transition-secondary);
+    -ms-transition: var(--transition-secondary);
+    -o-transition: var(--transition-secondary);
+}
+div .brand-logo {
+    padding: 0;
+    width: 3rem;
+    height: 3rem;
+    flex-shrink: 0;
+}
+
+.navbar-nav {
+    align-items: center;
+    margin-left: 35rem;
+}
+
+.package-track {
+    margin-left: 4rem;
+}
+
+.package-track .PrimaryBtn {
+    font-size: 1.2rem;
+    padding: 0.45rem 1rem;
+    text-decoration: none;
+}
+
+@media screen and (min-width: 992px) and (max-width: 1439px) {
+    .navbar .navbar-nav {
+        margin-left: 2.5rem;
+    }
+    div .brand-logo {
+        padding: 0;
+        width: 9rem;
+        height: 4rem;
+        flex-shrink: 0;
+    }
+
+    .navbar .nav-link {
+        font-size: 1rem;
+        margin-right: 0.9rem;
+    }
+    .package-track {
+        margin-left: 2rem;
+    }
+    .package-track .PrimaryBtn {
+        font-size: 1rem;
+        padding: 0.45rem 1rem;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .navbar-collapse {
+        margin-left: -0.7rem;
+        margin-top: -0.2rem;
+        background: linear-gradient(-45deg, #ca6262, #db6a6a, #e4c471, #cfad55);
+        background-size: 400% 400%;
+        animation: gradient 15s ease infinite;
+        height: 100vh;
+    }
+
+    @keyframes gradient {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+
+    .navbar-nav {
+        align-items: start;
+        margin: 3rem;
+    }
+    .navbar-collapse .navbar-nav .nav-link {
+        color: var(--dark-color);
+        font-size: 1.6rem;
+        font-weight: 600;
+        margin-bottom: 2rem;
+        width: 80vw;
+        border-bottom: 0.06rem solid var(--dark-color);
+        padding-bottom: 0.8rem;
+    }
+
+    .navbar-collapse .navbar-nav .package-track .nav-link {
+        border: none;
+    }
+    .package-track {
+        margin-left: 0rem;
+    }
+    .package-track .PrimaryBtn {
+        width: 100%;
+    }
+}

@@ -1,0 +1,129 @@
+.AccessContainer .sign-up-container h1 {
+    text-wrap: nowrap;
+    font-size: 2.3rem;
+    font-weight: 700;
+}
+
+.sign-up-container {
+    left: 0;
+    width: 50%;
+    opacity: 0;
+    z-index: 1;
+}
+
+.AccessContainer.right-panel-active .sign-up-container {
+    transform: translateX(100%);
+    opacity: 1;
+    z-index: 5;
+    animation: show 0.6s;
+    -webkit-animation: show 0.6s;
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    -o-transform: translateX(100%);
+}
+
+@keyframes show {
+    0%,
+    49.99% {
+        opacity: 0;
+        z-index: 1;
+    }
+
+    50%,
+    100% {
+        opacity: 1;
+        z-index: 5;
+    }
+}
+
+/* File Upload -start- */
+.identity-card-info {
+    display: flex;
+    align-items: flex-end;
+}
+
+.upload-btn-wrapper {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    z-index: 99;
+    cursor: pointer;
+}
+
+.btn-file {
+    cursor: pointer;
+    border: 2px solid var(--primary-color);
+    width: 10rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: var(--primary-color);
+    background-color: white;
+    border-radius: 8px;
+    height: 3rem;
+    font-size: 0.8rem;
+    text-wrap: nowrap;
+    letter-spacing: 0;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.upload-btn-wrapper input[type="file"] {
+    cursor: pointer;
+    font-size: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+}
+
+.sign-up-container .modal-content .modal-body .card-id {
+    width: 3rem;
+    margin-right: 0.5rem;
+}
+
+.modal-open .modal-backdrop {
+    z-index: 1;
+}
+
+.AccessContainer.right-panel-active
+    .sign-up-container
+    .identity-card-info
+    .modal-content {
+    z-index: 1050;
+}
+
+.sign-up-container button {
+    background-color: var(--light-color);
+    color: var(--dark-color);
+}
+/* File Upload -end- */
+
+@media screen and (max-width: 768px) {
+    .identity-card-info {
+        display: block;
+    }
+    .AccessContainer .sign-up-container h1 {
+        font-size: 1.8rem;
+        font-weight: 700;
+    }
+
+    .sign-up-container .formInput-Container input {
+        width: 20rem;
+        max-width: 20rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .sign-up-container {
+        left: 0;
+        width: 100%;
+        opacity: 1;
+        z-index: 0;
+    }
+
+    .sign-up-container .formInput-Container input {
+        width: 20rem;
+        max-width: 20rem;
+    }
+}
